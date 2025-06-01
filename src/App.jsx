@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import OurServicesPage from "./pages/OurServicesPage";
@@ -20,8 +20,6 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
-    <ScrollToTop/>
     <div className="app">
       <header className="primaryHeader">
         <nav className="primaryNavigation">
@@ -68,6 +66,7 @@ function App() {
         </nav>
       </header>
       <main className="mainSection">
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/AboutUsPage" element={<AboutUsPage />} />
@@ -126,7 +125,6 @@ function App() {
         </ul>
       </footer>
     </div>
-    </BrowserRouter>
   );
 }
 
