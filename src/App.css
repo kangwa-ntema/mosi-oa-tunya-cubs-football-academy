@@ -1,0 +1,363 @@
+/* @import "./components/css/abstract/fonts.css"; */
+@import "./components/css/abstracts/colors.css";
+@import "./components/css/abstracts/resets.css";
+/* @import "./components/css/abstract/transitions.css"; */
+
+
+.primaryLogoContainer {
+  padding: 1rem;
+  top: 0;
+}
+
+.primaryLogo {
+  background-image: url("./assets/images/logos/motc-logo-primary.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+/* .app {
+  background-color: var(--clr-primary);
+}
+.primaryHeader {
+  background-color: var(--clr-primary3);
+  position: relative;
+}
+
+
+
+.primaryNavigation {
+  max-width: var(--max-width-lg);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primaryNavList {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.mainSection {
+  max-width: var(--max-width-lg);
+  background-color: var(--clr-neutral-blend-200-5);
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--clr-neutral-100);
+}
+
+.footerNavigation {
+  max-width: var(--max-width-lg);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footerNavList {
+  display: flex;
+  gap: 1rem;
+}
+ */
+
+
+
+
+ .app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Header Styles */
+.primaryHeader {
+  background-color: var(--clr-primary); /* Dark primary color for header */
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.primaryNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width-xl);
+  margin: 0 auto;
+}
+
+.primaryLogoContainer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--clr-primary5); /* Accent color for logo text */
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.primaryLogoContainer:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.primaryLogo {
+  /* Placeholder for an actual logo image or SVG */
+  width: 40px; /* Example size */
+  height: 40px; /* Example size */
+  background-color: var(--clr-primary5); /* Placeholder color */
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-primary);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.primaryLogo::before {
+    content: "MOTC"; /* Text for the placeholder logo */
+}
+
+
+.primaryNavList {
+  display: flex;
+  gap: 1.5rem; /* Space between navigation items */
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Smooth transition for mobile menu */
+  overflow: hidden; /* Hide overflow when collapsed */
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--clr-primary2); /* Light color for navigation links */
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navLink:hover,
+.navLink.active { /* Add .active class for current page */
+  background-color: var(--clr-primary6); /* Darker accent on hover/active */
+  color: var(--clr-primary4); /* Dark text on hover/active */
+}
+
+/* Mobile Navigation Toggle Button */
+.navToggle {
+  display: none; /* Hidden by default on larger screens */
+  background: none;
+  border: none;
+  color: var(--clr-primary2);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navToggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Content Area */
+.mainSection {
+  flex-grow: 1; /* Allows main content to take up available space */
+  padding: 2rem;
+  max-width: var(--max-width-xl);
+  margin: 0 auto;
+  width: 100%; /* Ensure it takes full width within its padding */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--clr-primary3); /* Slightly lighter dark color for footer */
+  padding: 1.5rem 2rem;
+  color: var(--clr-primary2);
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: auto; /* Pushes footer to the bottom */
+  display: flex; /* Make footer a flex container */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 1.5rem; /* Space between sections in the footer */
+}
+
+.footerNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width-xl);
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 100%; /* Take full width of footer padding */
+}
+
+.footerLogo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--clr-primary5);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.footerNavList {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footerNavItem {
+  list-style: none;
+}
+
+.footerNavLink {
+  text-decoration: none;
+  color: var(--clr-primary2);
+  font-weight: 400;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footerNavLink:hover {
+  background-color: var(--clr-primary6);
+  color: var(--clr-primary4);
+}
+
+/* New styles for policies list in footer */
+.policies {
+  display: flex;
+  flex-direction: column; /* Stack policy links vertically */
+  gap: 0.5rem; /* Space between policy links */
+  align-items: center; /* Center policy links */
+  width: 100%; /* Take full width for responsiveness */
+  padding-top: 1rem; /* Add some padding from the main footer nav */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+}
+
+.policies li {
+  list-style: none; /* Ensure no bullets */
+}
+
+.policies a {
+  text-decoration: none;
+  color: var(--clr-primary9); /* A distinct color for policy links */
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.policies a:hover {
+  color: var(--clr-primary5); /* Accent color on hover */
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .primaryNavigation {
+    flex-direction: row; /* Keep logo and toggle on one row */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navToggle {
+    display: block; /* Show hamburger icon on small screens */
+  }
+
+  .primaryNavList {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    max-height: 0; /* Collapse by default */
+    opacity: 0; /* Hide content */
+    visibility: hidden; /* Hide from screen readers */
+    position: absolute; /* Take out of flow to prevent layout shifts */
+    top: 100%; /* Position below header */
+    left: 0;
+    background-color: var(--clr-primary); /* Background for collapsed menu */
+    padding: 0 2rem; /* Adjust padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+
+  .primaryNavList.navOpen {
+    max-height: 500px; /* Adjust as needed to fit all items */
+    opacity: 1;
+    visibility: visible;
+    padding: 1rem 2rem; /* Adjust padding when open */
+    position: static; /* Allow it to take up space when open */
+  }
+
+  .navItem {
+    width: 100%;
+  }
+
+  .navLink {
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem; /* Consistent padding */
+  }
+
+  .primaryHeader {
+    padding: 1rem;
+    position: relative; /* Needed for absolute positioning of nav list */
+  }
+
+  .primaryLogoContainer {
+    margin-bottom: 0; /* Remove margin below logo in mobile header */
+  }
+
+  /* Footer adjustments for mobile */
+  .footerNavigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footerNavList {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    text-align: center; /* Center footer nav links */
+  }
+
+  .footerNavLink {
+    width: 100%;
+    text-align: center;
+  }
+
+  .policies {
+    flex-direction: column; /* Stack policy links vertically on mobile */
+    text-align: center; /* Center text */
+  }
+}
+
+@media (max-width: 480px) {
+  .primaryHeader,
+  .footer {
+    padding: 0.75rem;
+  }
+
+  .primaryNavList.navOpen {
+    padding: 0.5rem 1rem; /* Further reduce padding for very small screens */
+  }
+}

@@ -1,0 +1,17 @@
+:root {
+  --clr-primary: #2b4a54ff;
+  --clr-primary2: #e7f6feff;
+  --clr-primary3: #182c34ff;
+  --clr-primary4: #091013ff;
+  --clr-primary5: #26f9bbff;
+  --clr-primary6: #04ae7fff;
+  --clr-primary7: #6f58f7ff;
+  --clr-primary8: #f3c178ff;
+  --clr-primary9: #5e9cb5ff;
+
+  --max-width-xsm: 576px;
+  --max-width-sm: 576px;
+  --max-width-md: 768px;
+  --max-width-lg: 922px;
+  --max-width-xl: 1200px;
+}

@@ -1,0 +1,325 @@
+/* HomePage.css */
+
+/* Base styles for the HomePage section */
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 3rem; /* Space between major sections on the home page */
+}
+
+/* Hero Section Styles */
+.homeHeroSection {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary3)); /* Gradient background */
+  color: var(--clr-primary2); /* Light text color */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  max-width: var(--max-width-lg);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.companyName {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--clr-primary5); /* Accent color for company name */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 1.1;
+}
+
+.primaryLogoTagline {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--clr-primary2);
+  margin-top: 0.5rem;
+}
+
+.academyPlayerAges {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-primary8); /* A warm accent color */
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--clr-primary8);
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 1rem;
+}
+
+/* Home Hero Academy Program Focus Section */
+.homeHeroAcademyProgFocus {
+  background-color: var(--clr-primary2); /* Light background */
+  color: var(--clr-primary4); /* Dark text */
+  padding: 2.5rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: var(--max-width-lg);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.homeHeroAcademyProgFocusHeadline {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.homeHeroAcademyProgFocusHeadline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--clr-primary6);
+  border-radius: 2px;
+}
+
+.homeHeroAcademyProgFocusList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.homeHeroAcademyProgFocusItem {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--clr-primary3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homeHeroAcademyProgFocusItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Home Intro Section Styles (existing content) */
+.homeIntroSection {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: var(--max-width-lg);
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.7;
+  color: var(--clr-primary4);
+}
+
+.homeHeadline { /* Re-using this class for the "Building The Apex Generation" headline */
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.homeSubHeadline { /* Re-using this class for "Play with Heart, Practice with Patience" */
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--clr-primary6);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.homeWelcomeText,
+.homeOverviewText {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Call to Action Section Styles */
+.homeCallToAction {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.ctaButton {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* Ensure it looks like a button even if it's a Link */
+  display: inline-block; /* For proper padding and alignment */
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.primaryCta {
+  background-color: var(--clr-primary5); /* Vibrant accent color */
+  color: var(--clr-primary4); /* Dark text on accent */
+  box-shadow: 0 4px 8px rgba(38, 249, 187, 0.3);
+}
+
+.primaryCta:hover {
+  background-color: var(--clr-primary6); /* Slightly darker accent on hover */
+}
+
+.secondaryCta {
+  background-color: var(--clr-primary7); /* Another accent color */
+  color: var(--clr-primary2); /* Light text on accent */
+  border: 2px solid var(--clr-primary7);
+  box-shadow: 0 4px 8px rgba(111, 88, 247, 0.3);
+}
+
+.secondaryCta:hover {
+  background-color: var(--clr-primary); /* Darker primary on hover */
+  border-color: var(--clr-primary);
+}
+
+/* Responsive Adjustments for HomePage */
+@media (max-width: 922px) { /* md breakpoint */
+  .homeHeroSection,
+  .homeHeroAcademyProgFocus,
+  .homeIntroSection {
+    padding: 2rem 1rem;
+    margin: 0 1rem; /* Add some side margin */
+  }
+
+  .companyName {
+    font-size: 2.2rem;
+  }
+
+  .primaryLogoTagline {
+    font-size: 1.5rem;
+  }
+
+  .academyPlayerAges {
+    font-size: 1.2rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  .homeHeroAcademyProgFocusHeadline {
+    font-size: 1.8rem;
+  }
+
+  .homeHeroAcademyProgFocusList {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .homeHeroAcademyProgFocusItem {
+    font-size: 1rem;
+    padding: 1.2rem;
+  }
+
+  .homeHeadline {
+    font-size: 1.8rem;
+  }
+
+  .homeSubHeadline {
+    font-size: 1.2rem;
+  }
+
+  .homeWelcomeText,
+  .homeOverviewText {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) { /* sm/xsm breakpoint */
+  .homePage {
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  .homeHeroSection {
+    padding: 2rem 1rem;
+    border-radius: 10px;
+  }
+
+  .companyName {
+    font-size: 1.8rem;
+  }
+
+  .primaryLogoTagline {
+    font-size: 1.2rem;
+  }
+
+  .academyPlayerAges {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+  }
+
+  .homeHeroAcademyProgFocus {
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+  }
+
+  .homeHeroAcademyProgFocusHeadline {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .homeHeroAcademyProgFocusHeadline::after {
+    width: 60px;
+    height: 3px;
+  }
+
+  .homeHeroAcademyProgFocusList {
+    grid-template-columns: 1fr; /* Stack items vertically on very small screens */
+    gap: 1rem;
+  }
+
+  .homeHeroAcademyProgFocusItem {
+    padding: 1rem;
+  }
+
+  .homeIntroSection {
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .homeHeadline {
+    font-size: 1.5rem;
+  }
+
+  .homeSubHeadline {
+    font-size: 1rem;
+  }
+
+  .homeWelcomeText,
+  .homeOverviewText {
+    font-size: 0.9rem;
+  }
+
+  .homeCallToAction {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1rem;
+  }
+
+  .ctaButton {
+    width: 80%; /* Make buttons wider */
+    margin: 0 auto; /* Center buttons */
+  }
+}
