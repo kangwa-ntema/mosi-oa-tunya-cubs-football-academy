@@ -13,6 +13,9 @@ import PublicCodeOfConductPage from "./pages/PublicCodeOfConductPage/PublicCodeO
 import PlayerConsentFormPage from "./pages/PlayerConsentFormPage/PlayerConsentFormPage";
 import PlayerPrivacyPolicyPage from "./pages/PlayerPrivacyPolicyPage/PlayerPrivacyPolicy";
 
+/* UTILITIES */
+import ScrollToTop from "./components/scrollToTop/ScrollToTop"
+
 import "./App.css";
 
 function App() {
@@ -63,6 +66,7 @@ function App() {
         </nav>
       </header>
       <main className="mainSection">
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/AboutUsPage" element={<AboutUsPage />} />
