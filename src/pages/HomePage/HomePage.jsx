@@ -1,11 +1,14 @@
 import React from "react"
 
+import HomeHeroImage from "../../assets/images/motc-fb-cover-2.png";
+
 import "./HomePage.css";
 
 const HomePage = () => {
   return (
     <section className="homePage">
       <div className="homeHeroSection">
+        <img src={HomeHeroImage} alt="" />
         <h1 className="companyName">MOSI-OA-TUNYA CUBS FOOTBALL ACADEMY.</h1>
         <h2 className="primaryLogoTagline">Skill Up, Play Hard, Have Fun!</h2>
         <h3 className="academyPlayerAges">5 - 13 Years Old</h3>
@@ -35,11 +38,10 @@ const HomePage = () => {
         </p>
       </div>
 
-      <div className="homeCallToAction">
-        {/* These would typically be React Router Links or similar for navigation */}
+      {/* <div className="homeCallToAction">
         <button className="ctaButton primaryCta">Explore Our Programs</button>
         <button className="ctaButton secondaryCta">Contact Us</button>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -19,6 +19,9 @@ import ScrollToTop from "./components/scrollToTop/ScrollToTop"
 import "./App.css";
 
 function App() {
+
+  const copyRightYear = new Date().getFullYear();
+
   return (
     <div className="app">
       <header className="primaryHeader">
@@ -32,12 +35,12 @@ function App() {
                 About
               </Link>
             </li>
-            <li className="navItem">
+            {/*<li className="navItem">
               <Link className="navLink" to="/OurServicesPage">
                 Services
               </Link>
             </li>
-            <li className="navItem">
+             <li className="navItem">
               <Link className="navLink" to="/OurApproachPage">
                 Approach
               </Link>
@@ -46,7 +49,7 @@ function App() {
               <Link className="navLink" to="/OurProgramsPage">
                 Programs
               </Link>
-            </li>
+            </li> */}
             <li className="navItem">
               <Link className="navLink" to="/OurCommitmentPage">
                 Commitment
@@ -70,12 +73,12 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/AboutUsPage" element={<AboutUsPage />} />
-          <Route path="/OurServicesPage" element={<OurServicesPage />} />
+         {/*  <Route path="/OurServicesPage" element={<OurServicesPage />} /> */}
           <Route path="/ContactUsPage" element={<ContactUsPage />} />
-          <Route path="/OurProgramsPage" element={<OurProgramsPage />} />
-          <Route path="/ManagementTeamPage" element={<ManagementTeamPage />} />
+         {/*  <Route path="/OurProgramsPage" element={<OurProgramsPage />} /> */}
+          {/* <Route path="/ManagementTeamPage" element={<ManagementTeamPage />} /> */}
           <Route path="/OurCommitmentPage" element={<OurCommitmentPage />} />
-          <Route path="/OurApproachPage" element={<OurApproachPage />} />
+          {/* <Route path="/OurApproachPage" element={<OurApproachPage />} /> */}
 
           {/* Policies Pages */}
 
@@ -123,6 +126,21 @@ function App() {
             <Link to="PublicCodeOfConductPage" >Public Code of Conduct</Link>
           </li>
         </ul>
+        <div className="footerBottom">
+        <p className="appFooterCopyright">MOTC Academy &copy; {copyRightYear}</p>
+        <p className="sponsor">
+          Developed by
+          <a
+            href="https://www.druzycanvas.com"
+            className="developerLink"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Druzy Canvas
+          </a>
+        </p>
+      </div>
       </footer>
     </div>
   );
