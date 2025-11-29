@@ -7,7 +7,7 @@
   align-items: center;
   padding: 2rem 0;
   gap: 3rem; /* Space between major sections on the home page */
-  max-width: var(--max-width-xl);
+  max-width: 1400px;
 }
 
 /* Hero Section Styles */

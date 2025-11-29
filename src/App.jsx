@@ -91,21 +91,24 @@ function App() {
       </main>
       <footer className="footer">
         <nav className="footerNavigation">
-          <div className="footerLogo">Logo</div>
+          <div className="footerLogo"></div>
           <ul className="footerNavList" role="list">
             <li className="footerNavItem">
-              <Link className="footerNavLink" to="/">
-                Home
-              </Link>
             </li>
             <li className="navItem">
               <Link className="footerNavLink" to="/AboutUsPage">
                 About
               </Link>
             </li>
-            <li className="navItem">
+            {/* <li className="navItem">
               <Link className="footerNavLink" to="/OurServicesPage">
                 Services
+              </Link>
+            </li> */}
+            <li className="navItem">
+              <Link className="footerNavLink" to="/AboutUsPage">
+
+                Commitment
               </Link>
             </li>
             <li className="navItem">

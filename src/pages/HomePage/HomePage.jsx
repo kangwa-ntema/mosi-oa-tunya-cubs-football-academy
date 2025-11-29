@@ -1,6 +1,6 @@
 import React from "react"
 
-import HomeHeroImage from "../../assets/images/motc-fb-cover-2.png";
+import HomeHeroImage from "../../assets/images/motc-fb-cover-2.jpg";
 
 import "./HomePage.css";
 
@@ -10,8 +10,6 @@ const HomePage = () => {
       <div className="homeHeroSection">
         <img src={HomeHeroImage} alt="" />
         <h1 className="companyName">MOSI-OA-TUNYA CUBS FOOTBALL ACADEMY.</h1>
-        <h2 className="primaryLogoTagline">Skill Up, Play Hard, Have Fun!</h2>
-        <h3 className="academyPlayerAges">5 - 13 Years Old</h3>
       </div>
       <div className="homeHeroAcademyProgFocus">
         <h1 className="homeHeroAcademyProgFocusHeadline">We Focus On</h1>

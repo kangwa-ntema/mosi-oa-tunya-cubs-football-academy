@@ -14,7 +14,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 5rem;
+  padding: 3rem;
 }
 /* .app {
   background-color: var(--clr-primary);
@@ -90,7 +90,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: var(--max-width-xl);
+  max-width: var(--max-width-xxl);
   margin: 0 auto;
 }
 
@@ -159,7 +159,7 @@
 .mainSection {
   flex-grow: 1; /* Allows main content to take up available space */
   padding: 2rem;
-  max-width: var(--max-width-xl);
+  max-width: var(--max-width-xxl);
   margin: 0 auto;
   width: 100%; /* Ensure it takes full width within its padding */
 }
@@ -195,6 +195,14 @@
   color: var(--clr-primary5);
   padding: 0.5rem;
   border-radius: 8px;
+}
+
+.footerLogo {
+  background-image: url("./assets/images/logos/motc-logo-webtab-icon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
 }
 
 .footerNavList {
@@ -264,6 +272,11 @@
 .footerBottom .sponsor{
   font-size: .6rem;
   margin-top: .5rem;
+}
+
+.footerBottom .sponsor a{
+  color: hsl(15, 90%, 60%);
+  text-decoration: none;
 }
 
 /* Responsive Adjustments */
